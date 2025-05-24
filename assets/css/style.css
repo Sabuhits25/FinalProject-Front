@@ -495,3 +495,21 @@ header .login .login-register-button .register-button a {
   display: inline-block;
   transition: 0.4s;
 }
+header .login .login-form {
+  background: #464646;
+  padding: 40px 50px 50px;
+}
+header .login .login-form .form-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+header .login .login-form .form-top p,
+header .login .login-form .form-top i {
+  font-weight: normal;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
