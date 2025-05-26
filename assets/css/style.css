@@ -798,3 +798,101 @@ main .bg-shop .shop-flex .shop-image span {
 main .bg-shop .shop-flex .shop-title {
   width: 200px;
 }
+main .bg-shop .shop-flex .shop-title h2 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+main .bg-shop .shop-flex a {
+  position: absolute;
+  bottom: 15%;
+  left: 30%;
+  transform: translate(-15%, -30%);
+  width: 159px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  gap: 20px;
+  justify-content: center;
+  padding: 8px 40px 8px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+main .bg-shop .shop-flex a:hover {
+  background-color: #f8f9fa;
+}
+main .bg-shop .shop-flex a:hover i {
+  color: black;
+}
+main .bg-shop .shop-flex a:hover p {
+  color: black;
+}
+main .bg-shop .shop-flex a i {
+  color: #f8f9fa;
+  margin-top: 5px;
+}
+main .bg-shop .shop-flex a p {
+  align-items: center;
+  font-weight: normal;
+  color: #f8f9fa;
+  font-size: 25px;
+}
+main .power-slider .power-slider-header {
+  width: 1251px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .power-slider .power-slider-header .power-slider-title {
+  width: 490px;
+}
+main .power-slider .power-slider-header .power-slider-title span {
+  font-family: "Gotham Office";
+  font-size: 15px;
+  letter-spacing: 0.39em;
+  color: #f86a63;
+  opacity: 0.77;
+  margin-bottom: 15px;
+}
+main .power-slider .power-slider-header .power-slider-title h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
+  width: 490px;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+main .power-slider .power-slider-header .power-slider-categories {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .power-slider .power-slider-header .power-slider-categories span {
+  font-weight: normal;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid white;
+  transform: skewX(-15deg);
+  padding: 15px 25px;
+}
+main .power-slider .power-slider-boxs1 {
+  overflow: hidden;
+  margin-left: 25px;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box1 {
+  width: 485px;
+  height: 625px;
+  display: inline-block;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
