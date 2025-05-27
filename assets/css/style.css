@@ -896,3 +896,189 @@ main .power-slider .power-slider-boxs1 .power-slider-box1 img {
      object-fit: cover;
   display: block;
 }
+main .power-slider .power-slider-boxs1 .power-slider-box2 {
+  width: 800px;
+  margin-left: 30px;
+  display: inline-block;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide {
+  width: 250px;
+  height: 500px;
+  background-color: #212226;
+  transition: 0.4s ease-in-out;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-image {
+  width: 250px;
+  height: 240px;
+  overflow: hidden;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-title {
+  position: relative;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-title span {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #9699a7;
+  max-width: 80%;
+  padding-top: 25px;
+  margin: 0 auto 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .total-rating {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .total-rating .total-star i {
+  color: #e1251b;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .total-rating span {
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .total-rating p {
+  position: absolute;
+  left: 105%;
+  top: -10px;
+  padding: 4px 7px;
+  background: red;
+  border-radius: 35px;
+  line-height: 1;
+  font-weight: bold !important;
+  font-size: 13px !important;
+  color: #fff;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-price {
+  position: relative;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-price span {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  color: #9699a7;
+  margin-bottom: 0;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-add-basket {
+  position: relative;
+  bottom: -10%;
+  opacity: 0;
+  border: 1px solid #e1241a;
+  background-color: #e1241a;
+  padding: 10px;
+  width: 80%;
+  transition: 0.4s ease-in-out;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-add-basket a {
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-add-basket span {
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-add-basket div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide:hover {
+  border: 1px solid #e1241a;
+}
+main .power-slider .power-slider-boxs1 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide:hover .product-add-basket {
+  bottom: -30px;
+  opacity: 1;
+}
+main .power-slider .power-slider-boxs2,
+main .power-slider .power-slider-boxs3 {
+  overflow: hidden;
+  display: none;
+  margin-left: 25px;
+}
+main .power-slider .power-slider-boxs2 .power-slider-box1,
+main .power-slider .power-slider-boxs3 .power-slider-box1 {
+  width: 485px;
+  height: 625px;
+  display: inline-block;
+}
+main .power-slider .power-slider-boxs2 .power-slider-box1 img,
+main .power-slider .power-slider-boxs3 .power-slider-box1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+main .power-slider .power-slider-boxs2 .power-slider-box2,
+main .power-slider .power-slider-boxs3 .power-slider-box2 {
+  width: 800px;
+  margin-left: 30px;
+  display: inline-block;
+}
+main .power-slider .power-slider-boxs2 .power-slider-box2 .foryou .swiper-wrapper,
+main .power-slider .power-slider-boxs3 .power-slider-box2 .foryou .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+main .power-slider .power-slider-boxs2 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide,
+main .power-slider .power-slider-boxs3 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide {
+  width: 250px;
+  height: 500px;
+  background-color: #212226;
+}
+main .power-slider .power-slider-boxs2 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper,
+main .power-slider .power-slider-boxs3 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+main .power-slider .power-slider-boxs2 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-image,
+main .power-slider .power-slider-boxs3 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-image {
+  width: 250px;
+  height: 240px;
+  overflow: hidden;
+}
+main .power-slider .power-slider-boxs2 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-image img,
+main .power-slider .power-slider-boxs3 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .power-slider .power-slider-boxs2 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-title,
+main .power-slider .power-slider-boxs3 .power-slider-box2 .foryou .swiper-wrapper .swiper-slide .product-box-swipper .product-title {
+  position: relative;
+}
