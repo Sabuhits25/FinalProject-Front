@@ -857,3 +857,181 @@ main .filter-product-all .filter-product .filter-left-all .filter-left .filter-s
   pointer-events: none;
   margin-top: 20px;
 }
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider .ui-slider-handle {
+  --y: 0;
+  --background: var(--handle);
+  cursor: grab;
+  -webkit-tap-highlight-color: transparent;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  transform: translateX(-50%);
+  position: absolute;
+  outline: none;
+  display: block;
+  pointer-events: auto;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider .ui-slider-handle div {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  transition: background 0.4s ease;
+  transform: translateY(calc(var(--y) * 1px));
+  border: var(--handle-border);
+  background: var(--background);
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider .ui-slider-handle:hover {
+  --background: var(--handle-hover);
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider .ui-slider-handle:active {
+  --background: var(--handle-active);
+  cursor: grabbing;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider svg {
+  --stroke: var(--line);
+  display: block;
+  height: 83px;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider svg path {
+  fill: none;
+  stroke: var(--stroke);
+  stroke-width: 1;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider .active, main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider > svg {
+  position: absolute;
+  top: -30px;
+  height: 83px;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider > svg {
+  left: 0;
+  width: 100%;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider .active {
+  position: absolute;
+  overflow: hidden;
+  left: calc(var(--l) * 1px);
+  right: calc(var(--r) * 1px);
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider .active svg {
+  --stroke: var(--line-active);
+  position: relative;
+  left: calc(var(--l) * -1px);
+  right: calc(var(--r) * -1px);
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .price-range .slider .active svg path {
+  stroke-width: 2;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .product-color {
+  max-width: 312px;
+  margin: 50px auto;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .product-color .color-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 19px;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .product-color .color-title span {
+  font-weight: normal;
+  font-size: 35px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .product-color .color-title::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  margin-left: 60px;
+  background: rgba(255, 255, 255, 0.1);
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .product-color .colors-filter {
+  max-width: 250px;
+  margin: 50px auto;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .product-color .colors-filter .color-filter .color-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .filter-product-all .filter-product .filter-left-all .filter-left .filter-scroll .product-color .colors-filter .color-filter .color-box span {
+  font-size: 25px;
+  font-weight: normal;
+  color: #f8f9fa;
+  opacity: 0.8;
+}
+main .filter-product-all .filter-product .none-filter-icon {
+  width: 50px;
+  height: 80px;
+  border-radius: 0 25px 25px 0;
+  background-color: #000;
+  position: fixed;
+  left: 100%;
+  top: 40%;
+  z-index: 99;
+}
+main .filter-product-all .filter-product .none-filter-icon img {
+  margin-top: 20px;
+  width: 30px;
+  height: 40px;
+}
+main .filter-product-all .filter-product .product-right-all .product-right {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+main .filter-product-all .filter-product .product-right-all .product-right .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+main .filter-product-all .filter-product .product-right-all .product-right .product-list .swiper-slide {
+  width: 30%;
+  height: 500px;
+  background-color: #212226;
+  transition: 0.4s ease-in-out;
+}
+main .filter-product-all .filter-product .product-right-all .product-right .product-list .swiper-slide .product-box-swipper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  margin: 0 auto;
+}
+main .filter-product-all .filter-product .product-right-all .product-right .product-list .swiper-slide .product-box-swipper .product-image {
+  max-width: 250px;
+  height: 240px;
+  overflow: hidden;
+}
+main .filter-product-all .filter-product .product-right-all .product-right .product-list .swiper-slide .product-box-swipper .product-image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .filter-product-all .filter-product .product-right-all .product-right .product-list .swiper-slide .product-box-swipper .product-title {
+  position: relative;
+}
+main .filter-product-all .filter-product .product-right-all .product-right .product-list .swiper-slide .product-box-swipper .product-title span {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #9699a7;
+  max-width: 80%;
+  padding-top: 25px;
+  margin: 0 auto 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .filter-product-all .filter-product .product-right-all .product-right .product-list .swiper-slide .product-box-swipper .total-rating {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .filter-product-all .filter-product .product-right-all .product-right .product-list .swiper-slide .product-box-swipper .total-rating .total-star i {
+  color: #e1251b;
+}
