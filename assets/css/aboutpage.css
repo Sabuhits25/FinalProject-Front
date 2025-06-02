@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  background: #000;
+  width: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  display: none;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1251b;
+  border-radius: 5px;
+}
+
+body {
+  background: black;
+}
+
+header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+}
+header nav {
+  border-bottom: 1px solid #6c757d;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+header nav .menu {
+  display: flex;
+  flex: 0 0 17%;
+  font-size: 25px;
+}
+header nav .menu i {
+  color: #f8f9fa;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+header nav li .quantity {
+  width: 17px;
+  height: 17px;
+  color: #f8f9fa;
+  position: absolute;
+  bottom: -7px;
+  left: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  line-height: 0;
+  background: black;
+  cursor: pointer;
+}
+header nav li i {
+  color: #f8f9fa;
+  margin: 0 18px;
+  font-size: 22px;
+}
+header nav li span {
+  color: #f8f9fa;
+  font-size: 15px;
+}
+header .basket-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 99;
+  background: #464646;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(100%);
+  overflow: hidden;
+}
+header .basket-container .basket-content {
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #464646;
+  padding: 70px 320px 30px 120px;
+  height: 100%;
+  transform: translateX(100%);
+  transition: 0.5s;
+  transition-delay: 0.3s;
+  transition-timing-function: cubic-bezier(0.23, 0.34, 0.2, 1.49);
+  transform: translateX(300px);
+}
+header .basket-container .basket-content > p {
+  font-weight: bold;
+  font-size: 52px;
+  color: #fff;
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .basket-container:after {
+  box-sizing: border-box;
+}
+header .basket-container:before {
+  box-sizing: border-box;
+}
+header .basket-container:-webkit-scrollbar {
+  width: 0;
+  width: 5px;
+  height: 0;
+}
+header .basket-container:-webkit-scrollbar-thumb {
+  background: #e1251b;
+}
+header .basket-container:-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+}
+header .basket-container p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+header .basket-container .b-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100% - 310px);
+  justify-content: space-between;
+  overflow: auto;
+  position: relative;
+  padding-bottom: 145px;
+}
+header .basket-container .b-product-list .product-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px 10px;
+  width: 47%;
+  border: 1px solid #707070;
+  height: 350px;
+  margin-top: 80px;
+}
+header .basket-container .b-product-list .product-item:nth-child(1) {
+  margin-top: 20px;
+}
+header .basket-container .b-product-list .product-item:nth-child(2) {
+  margin-top: 20px;
+}
+header .basket-container .b-product-list .product-item .delete {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+header .basket-container .b-product-list .product-item .delete svg {
+  stroke: red;
+  width: 19px;
+  height: 19px;
+}
+header .basket-container .b-product-list .product-item .num {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+header .basket-container .b-product-list .product-item .p-name {
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  width: 85%;
+  max-height: 70px;
+}
+header .basket-container .b-product-list .product-item .qty {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+header .basket-container .b-product-list .product-item .qty .qty-plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
