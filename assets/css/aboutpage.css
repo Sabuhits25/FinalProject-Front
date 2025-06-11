@@ -23,7 +23,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: none;
 }
 
-
+/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -1102,4 +1102,4 @@ footer .footer-all .footer-bottom p {
   footer .footer-mid .links {
     flex-direction: column;
   }
-}
+}/*# sourceMappingURL=aboutpage.css.map */
